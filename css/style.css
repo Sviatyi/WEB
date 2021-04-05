@@ -87,7 +87,6 @@ header .container .right-header ul li a:hover {
 
 main .container {
   min-height: 500px;
-  max-height: 1600px;
 }
 main .container h1 {
   text-align: center;
