@@ -7,75 +7,39 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
 	<title>ЛабаВеб</title>
+	<script src="js/index.js"></script>
 </head>
 <body>
+	
 	<header>
 		<div class="container">
 			<div class="left-header">
 				<ul>
-					<li><a href="" content="/21E9">Category</a>
+					<li id="savedArticle"></li>
+					<li><a href="index.html" content="/21E9">Category</a>
 						<ul class="submenu">
-					        <li><a href="">Category</a></li>
-					        <li><a href="">Author</a></li>
-					        <li><a href="">Archive</a></li>
-					        <li><a href="">Tags</a></li>
+					        <li><a href="index.html?category=science">Science</a></li>
+					        <li><a href="index.html?category=history">History</a></li>
+					        <li><a href="index.html?category=business">Business</a></li>
+					        <li><a href="index.html?category=machinery">Machinery</a></li>
       					</ul>
       				</li>
-					<li><a href="saved.html">Saved</a></li>
 				</ul>
 			</div>
 			<div class="right-header">
 				<ul>
-					<li><a href="login.html">Login</a></li>
+					<li id="username"></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="container">
-			<h1>Title1</h1>
+			<h1 id = "container-title"></h1>
 			<hr noshade="">
-			<div class="layers">
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
-				<div class="articles">
-					<h3>Title</h3>
-					<textarea name="" id="" cols="30" rows="10" readonly="">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio provident, nisi aspernatur architecto iusto recusandae et suscipit praesentium dicta quibusdam veritatis asperiores, totam voluptatibus ipsum? Illo, alias. Omnis, odit, excepturi.
-					</textarea>
-				</div>
+			<div class="layers" id="layers">
+				
+				
 			</div>
 		</div>
 	</main>

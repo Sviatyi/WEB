@@ -6,34 +6,47 @@
 	<link rel="stylesheet" href="css/sign-up.css">
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
 	<title>Registration</title>
+	<script src="js/sign-up.js"></script>
 </head>
 <body>
 	<main>
 		<div class="wrapper">
 			<div class="container">
-				<form action="#" method="post">
-				<div class="email"> 
-					<label for="email"><b>Email</b></label>
-	           		<input type="email" placeholder="Enter Email" name="email" required>
-	            </div>
-	            <div class="phone_number">
-	                <label for="phone"><b>Phone number</b></label>
-	                <input type="Phone" placeholder="Enter Phone Number" name="pn" required>
-	            </div>
-	            <div class="password">
-	                <label for="psw"><b>Password</b></label>
-	                <input type="password" placeholder="Enter Password" name="psw" required>
-	            </div>
-	            <div class="password">
-	                <label for="psw"><b>Repeat password</b></label>
-	                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-	            </div>
-	           
-	            <div class="buttons">
-	                <button type="submit">Sign-in</button>
-	               	<button type="reset">Cancel</button>
-	            </div>
-	        	</form>
+				
+					<div class="sign-up"> 
+						<label for="email"><b>Email</b></label>
+		           		<input required type="email" placeholder="Enter Email" id="email" required>
+		            </div>
+		            <div class="sign-up"> 
+						<label for="username"><b>Username</b></label>
+		           		<input required type="text" placeholder="Enter username" id="username" required>
+		            </div>
+		            <div class="sign-up"> 
+						<label for="firstname"><b>Firstname</b></label>
+		           		<input required type="text" placeholder="Enter firstname" id="firstname" required>
+		            </div>
+		            <div class="sign-up"> 
+						<label for="lastname"><b>Lastname</b></label>
+		           		<input  type="text" placeholder="Enter lastname" id="lastname" required>
+		            </div>
+		            <div class="sign-up">
+		                <label for="phone"><b>Phone number</b></label>
+		                <input required type="Phone" placeholder="Enter Phone Number" id="pn" required>
+		            </div>
+		            <div class="sign-up">
+		                <label for="psw"><b>Password</b></label>
+		                <input required type="password" placeholder="Enter Password" id="psw" required>
+		            </div>
+		            <div class="sign-up">
+		                <label for="psw"><b>Repeat password</b></label>
+		                <input required type="password" placeholder="Repeat Password" id="psw-repeat" required>
+		            </div>
+		           
+		            <div class="buttons">
+		                <button type="submit" onclick="signUp()">Sign-up</button>
+		               	
+		            </div>
+	        	
 			</div>
 		</div>
 	</main>

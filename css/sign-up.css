@@ -5,7 +5,7 @@ body {
 main .wrapper {
   margin: 0 auto;
   max-width: 400px;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   border: 5px solid black;
@@ -13,7 +13,7 @@ main .wrapper {
 }
 main .wrapper .container {
   max-width: 360px;
-  height: 600px;
+  min-height: 600px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -21,45 +21,17 @@ main .wrapper .container {
   justify-content: center;
   flex-direction: column;
 }
-main .wrapper .container .email {
+main .wrapper .container .sign-up {
   margin: 10px;
 }
-main .wrapper .container .email input {
+main .wrapper .container .sign-up input {
   height: 40px;
   width: 98%;
   border: 0.5px solid black;
   border-radius: 10px;
   padding: 5px;
 }
-main .wrapper .container .email input:focus {
-  box-shadow: 0px 0px 0px 1.5px black inset;
-  outline: none;
-}
-main .wrapper .container .password {
-  margin: 10px;
-}
-main .wrapper .container .password input {
-  height: 40px;
-  width: 98%;
-  border: 0.5px solid black;
-  border-radius: 10px;
-  padding: 5px;
-}
-main .wrapper .container .password input:focus {
-  box-shadow: 0px 0px 0px 1.5px black inset;
-  outline: none;
-}
-main .wrapper .container .phone_number {
-  margin: 10px;
-}
-main .wrapper .container .phone_number input {
-  height: 40px;
-  width: 98%;
-  border: 0.5px solid black;
-  border-radius: 10px;
-  padding: 5px;
-}
-main .wrapper .container .phone_number input:focus {
+main .wrapper .container .sign-up input:focus {
   box-shadow: 0px 0px 0px 1.5px black inset;
   outline: none;
 }
