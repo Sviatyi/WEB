@@ -1,0 +1,340 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  min-height: 50px;
+}
+header .container {
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+header .container .left-header {
+  min-height: 50px;
+  float: left;
+  width: 70%;
+}
+header .container .left-header ul {
+  list-style-type: "";
+  margin: auto;
+  padding-top: 5px;
+}
+header .container .left-header ul li {
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 9px;
+  float: left;
+  position: relative;
+}
+header .container .left-header ul li a {
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+header .container .left-header ul li .submenu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  padding: 0;
+  background-color: black;
+}
+header .container .left-header ul li .submenu li {
+  padding: 5px;
+}
+header .container .left-header ul li a:hover {
+  color: silver;
+}
+header .container .left-header ul li:hover .submenu {
+  opacity: 1;
+}
+header .container .right-header {
+  min-height: 50px;
+  float: left;
+  width: 30%;
+}
+header .container .right-header ul {
+  list-style-type: "";
+  margin: auto;
+  padding-top: 5px;
+}
+header .container .right-header ul li {
+  display: inline-block;
+  padding-right: 30px;
+  float: right;
+}
+header .container .right-header ul li a {
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+header .container .right-header ul li a:hover {
+  color: silver;
+}
+
+main .container {
+  min-height: 600px;
+}
+main .container h1 {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+main .container hr {
+  size: 1px;
+  color: black;
+  max-width: 100px;
+}
+main .container .layers {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .container .layers .articles {
+  max-width: 325px;
+  min-height: 250px;
+  max-height: 500px;
+  text-align: justify;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 5px 10px;
+}
+main .container .layers .articles .article-text {
+  text-overflow: ellipsis;
+  text-align: justify;
+  max-width: 325px;
+  max-height: 325px;
+  border: 2px solid black;
+  padding: 10px;
+}
+main .container .layers .articles .article-a {
+  margin: 2px auto;
+  border: 2px solid black;
+  text-align: center;
+}
+main .container .layers .articles .article-a a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+main .container .layers h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+}
+footer .container {
+  min-height: 50px;
+  display: inline-flex;
+}
+footer .container .content {
+  color: white;
+  font-family: "Shippori Mincho", serif;
+  font-size: 25px;
+  padding: 15px;
+}
+/*single article */
+
+.container-article {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+main .container-article {
+  min-height: 500px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .container-article h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 15px 0;
+}
+main .container-article hr {
+  size: 3px;
+  color: black;
+  min-width: 200px;
+}
+main .container-article .layers {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .container-article .layers .articles {
+  min-height: 250px;
+  text-align: justify;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 40px;
+}
+main .container-article .layers h3 {
+  text-align: center;
+}
+main .container-article .buttons {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 95%;
+}
+main .container-article .buttons button {
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  height: 40px;
+  min-width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+main .container-article .buttons button:focus {
+  box-shadow: 0 0 0 1px black inset;
+  outline: none;
+}
+main .container-article .buttons button:hover {
+  background-color: silver;
+}
+
+/*Login page*/
+main .wrapper {
+  margin: 10px auto;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 15px;
+  font-family: "Shippori Mincho", serif;
+}
+main .wrapper .container-login {
+  max-width: 360px;
+  height: 400px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Shippori Mincho", serif;
+}
+main .wrapper .container-login a {
+  color: black;
+  font-family: "Shippori Mincho", serif;
+  font-size: 40px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+/* sign-in page*/
+
+main .wrapper-sign-in {
+  margin: 10px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+main .wrapper-sign-in .container-sign-in {
+  max-width: 360px;
+  min-height: 400px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .wrapper-sign-in .container-sign-in .sign-in {
+  margin: 10px;
+}
+main .wrapper-sign-in .container-sign-in .sign-in input {
+  height: 40px;
+  width: 98%;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+main .wrapper-sign-in .container-sign-in .sign-in input:focus {
+  box-shadow: 0 0 0 1.5px black inset;
+  outline: none;
+}
+main .wrapper-sign-in .container-sign-in .buttons {
+  margin: 10px;
+}
+main .wrapper-sign-in .container-sign-in .buttons button {
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+main .wrapper-sign-in .container-sign-in .buttons button:focus {
+  box-shadow: 0 0 0 1px black inset;
+  outline: none;
+}
+main .wrapper-sign-in .container-sign-in .buttons button:hover {
+  background-color: silver;
+}
+
+/*add article*/
+main .container .add-article-form{
+  font-size: 40px;
+  padding: 10px 25px;
+}
+main .container .add-article-form label{
+  float:left;
+  padding-right: 10px;
+}
+main .container .add-article-form select{
+  float:left;
+  padding-right: 10px;
+}
+
+main .container .add-article-form textarea{
+  width: 100%;
+  min-height: 400px;
+}
+main .container .add-article-form .form-element{
+  margin: 10px;
+}
+main .container .add-article-form .buttons {
+  margin: 10px;
+  text-align: center;
+}
+main .container .add-article-form .buttons button {
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  height: 40px;
+  min-width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
